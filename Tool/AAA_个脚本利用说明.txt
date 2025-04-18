@@ -1,0 +1,11 @@
+#GetNPUsers.py:
+
+	未启用 Kerberos 认证 的预身份攻击
+		一旦识别出这些用户，攻击者可以尝试使用各种攻击技术，如 Pass-the-Ticket 或 Kerberoasting，来获取用户的 Kerberos 票据并进行进一步的攻击
+	利用:
+
+		#使用用户名和密码查找未启用 Kerberos 预身份验证的用户
+		python GetNPUsers.py htb.local/user:password -dc-ip 10.129.238.72
+
+		#无密码模式
+		python GetNPUsers.py htb.local/user -dc-ip 10.129.238.72 -no-pass
